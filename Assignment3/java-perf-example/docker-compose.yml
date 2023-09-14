@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  java-perf-example:
+    container_name: "demo-example"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    restart: "unless-stopped"
